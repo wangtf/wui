@@ -1,0 +1,82 @@
+<ul class="nav navbar-nav">
+	<li class="dropdown active">
+		<a class="dropdown-toggle"  href="index.html">
+                        	网站首页
+                            </a>
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle" href="page_about.html">
+                          公司简介
+                        </a>
+		<!--<ul class="dropdown-menu">
+                            <li><a href="page_about.html">公司简介</a></li>
+                            <li><a href="page_services.html">Services</a></li>
+                            <li><a href="page_prices.html">Prices</a></li>
+                            <li><a href="page_faq.html">FAQ</a></li>
+                            <li><a href="page_gallery.html">公司资质</a></li>
+                            <li><a href="page_search_result.html">新闻动态</a></li>
+                            <li><a href="page_404.html">404</a></li>
+                            <li><a href="page_500.html">500</a></li>
+                            <li><a href="page_login.html">Login Page</a></li>
+                            <li><a href="page_signup.html">Signup Page</a></li>
+                            <li><a href="page_careers.html">Careers</a></li>
+                            <li><a href="page_contacts.html">Contact</a></li>
+                        </ul>-->
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle" href="blog.html">
+                        	解决方案
+                        </a>
+
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle" href="portfolio_4.html">
+                        	成功案例
+                        </a>
+		<!--<ul class="dropdown-menu">
+                        	<li><a href="portfolio_4.html">解决方案</a></li>
+                        	<li><a href="portfolio_3.html">Portfolio 3</a></li>
+                        	<li><a href="portfolio_2.html">Portfolio 2</a></li>
+                        	<li><a href="portfolio_item.html">Portfolio Item</a></li>
+                        </ul>-->
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle" href="page_gallery.html">
+                        	企业资质
+                        </a>
+		<!--<ul class="dropdown-menu">
+                        	<li><a href="blog.html">Blog Page</a></li>
+                        	<li><a href="blog_item.html">Blog Item</a></li>
+                        </ul>-->
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle"  href="news.html">
+                        	新闻动态
+                        </a>
+		<!--<ul class="dropdown-menu">
+                        	<li><a href="blog.html">图文列表</a></li>
+                        	<li><a href="blog_item.html">内容页</a></li>
+                        </ul>-->
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle"  href="contact_us.html">
+                        	联系我们
+                        </a>
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle"  href="jobs.html">
+                        	招贤纳士
+          </a>
+	</li>
+</ul>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var url=document.URL;
+		$(".navbar-nav").children().each(function(){
+			if(url.indexOf($(this).children("a").attr("href"))!=-1){
+				$(".navbar-nav").children().removeClass("active");
+				$(this).addClass("active");
+			}
+		});
+	});
+</script>
