@@ -1,6 +1,6 @@
 # wui
 wang's ui repertory
-includ:
+include:
 	bootstrap
 	ace
 	hplus
